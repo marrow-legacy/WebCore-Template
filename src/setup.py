@@ -1,20 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import sys, os
-
-try:
-    from distribute_setup import use_setuptools
-    use_setuptools()
-
-except ImportError:
-    pass
-
 from setuptools import setup, find_packages
-
-
-if sys.version_info <= (2, 5):
-    raise SystemExit("Python 2.5 or later is required.")
 
 
 setup(
